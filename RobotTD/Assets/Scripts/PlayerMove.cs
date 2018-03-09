@@ -15,11 +15,10 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-				// transform.Translate(transX,transY,transZ);
-		// transform.Rotate(rotX,rotY,rotZ);
-		 var j = Input.GetAxis("Jump")* Time.deltaTime * jumpHeight;
-		 var y = Input.GetAxis("Horizontal")* Time.deltaTime * turnSpeed;
-		var z = Input.GetAxis("Vertical")* Time.deltaTime * turnSpeed;
+
+		var j = Input.GetAxis("Jump")* Time.deltaTime * jumpHeight;
+		var y = Input.GetAxis("Horizontal")* Time.deltaTime * turnSpeed;
+		var z = Input.GetAxis("Vertical")* Time.deltaTime * moveSpeed;
 		
 		transform.Rotate(0,y,0);
 		transform.Translate(0,0,z);
