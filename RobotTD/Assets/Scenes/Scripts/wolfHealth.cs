@@ -15,7 +15,7 @@
 // 	}
 	
 // 	// Update is called once per frame
-// 	void TakeDamage(int amount){
+// 	public void TakeDamage(int amount){
 // 		currentHealth -= amount;
 // 		if(currentHealth <= 0){
 // 			//Keep score at zero
@@ -23,6 +23,7 @@
 // 			print("wolf is Dead!");
 // 			// add points to score for killing wolf
 // 			scoreManager.AddPoints(points);
+//             // Move wolf to spawn point for restart
 // 			transform.posistion = spawnPoint.position;
 // 			transform.rotation = spawnPoint.rotation;
 // 			//Reset Wolf Health
